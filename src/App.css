@@ -98,3 +98,30 @@ a:hover {
 .link-item a:hover {
   color: #ffd700; /* Lighter gold color on hover */
 }
+
+/* About.css */
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.stage {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 5px 0;
+}
