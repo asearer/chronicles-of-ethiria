@@ -8,13 +8,14 @@ function App() {
     <Router>
       <div className="App">
         <header>
-          <Navbar />
+          
         </header>
         <main>
+        <Navbar />
           {/* No Routes here */}
         </main>
         <footer>
-          <p>&copy; 2024 Chronicles of Ethiria</p>
+          <p>&copy; 2023-2024 Chronicles of Ethiria</p>
         </footer>
       </div>
     </Router>
