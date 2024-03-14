@@ -1,25 +1,100 @@
-nav {
-  background-color: #333;
-  padding: 10px 20px;
-}
-
-nav ul {
-  list-style-type: none;
+body {
   margin: 0;
   padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1d1d1d; /* Dark background color */
+  color: #fff; /* White text color */
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+header {
+  background-color: #2d1a12; /* Dark brown header background */
+  padding: 2% 5%; /* Fluid padding */
+  text-align: center;
 }
 
-nav ul li a {
-  color: white;
+header h1 {
+  margin: 0;
+  font-size: 3vw; /* Fluid font size */
+  font-weight: bold;
+}
+
+main {
+  padding: 2% 5%; /* Fluid padding */
+}
+
+footer {
+  background-color: #2d1a12; /* Dark brown footer background */
+  padding: 2% 5%; /* Fluid padding */
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* General link styles */
+a {
+  color: #e8ba51; /* Gold color for links */
   text-decoration: none;
+  transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
-nav ul li a:hover {
-  color: lightgray;
+a:hover {
+  color: #ffd700; /* Lighter gold color on hover */
 }
 
+/* News.css */
+
+.news-container {
+  padding: 2% 5%; /* Fluid padding */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid with minimum column width of 300px */
+  grid-gap: 20px; /* Spacing between grid items */
+}
+
+.news-item {
+  background-color: #2d1a12; /* Dark brown background for news items */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.news-item h3 {
+  margin: 0;
+  color: #e8ba51; /* Gold color for news titles */
+  font-size: 1.5vw; /* Fluid font size */
+}
+
+.news-item p {
+  margin: 10px 0 0; /* Top margin for news content */
+}
+
+/* Links.css */
+
+.links-container {
+  padding: 2% 5%; /* Fluid padding */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid with minimum column width of 300px */
+  grid-gap: 20px; /* Spacing between grid items */
+}
+
+.link-item {
+  background-color: #2d1a12; /* Dark brown background for link items */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.link-item a {
+  color: #e8ba51; /* Gold color for links */
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.link-item a:hover {
+  color: #ffd700; /* Lighter gold color on hover */
+}
