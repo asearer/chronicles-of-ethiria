@@ -1,11 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Nanum Pen Script', cursive; /* Updated font-family */
   background-color: #1d1d1d; /* Dark background color */
   color: #fff; /* White text color */
 }
 
+/* Header styles */
 header {
   background-color: #2d1a12; /* Dark brown header background */
   padding: 2% 5%; /* Fluid padding */
@@ -18,10 +19,12 @@ header h1 {
   font-weight: bold;
 }
 
+/* Main content styles */
 main {
   padding: 2% 5%; /* Fluid padding */
 }
 
+/* Footer styles */
 footer {
   background-color: #2d1a12; /* Dark brown footer background */
   padding: 2% 5%; /* Fluid padding */
@@ -44,12 +47,11 @@ a:hover {
 }
 
 /* News.css */
-
 .news-container {
   padding: 2% 5%; /* Fluid padding */
 }
 
-.grid-container {
+.news-container .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid with minimum column width of 300px */
   grid-gap: 20px; /* Spacing between grid items */
@@ -72,12 +74,11 @@ a:hover {
 }
 
 /* Links.css */
-
 .links-container {
   padding: 2% 5%; /* Fluid padding */
 }
 
-.grid-container {
+.links-container .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid with minimum column width of 300px */
   grid-gap: 20px; /* Spacing between grid items */
@@ -100,7 +101,6 @@ a:hover {
 }
 
 /* About.css */
-
 .about-container {
   max-width: 800px;
   margin: 0 auto;
@@ -124,4 +124,26 @@ h3 {
 
 p {
   margin: 5px 0;
+}
+
+/* GameConcept.css */
+
+/* Container styles */
+.game-concept-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading styles */
+.game-concept-container h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+/* Paragraph styles */
+.game-concept-container p {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 10px;
 }
