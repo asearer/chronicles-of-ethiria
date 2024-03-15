@@ -13,7 +13,7 @@ function Navbar() {
       <ul>
         <li><Link to="/news">News</Link></li>
         <li><Link to="/information">Information</Link></li>
-        <li><Link to="/images">Images</Link></li>
+        <li><Link to="/images">Media</Link></li>
         <li><Link to="/links">Links</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact</Link></li>
