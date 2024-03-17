@@ -8,7 +8,7 @@ function App() {
     <Router>
       <div className="App">
         <header>
-          <h1>Chronicles of Ethiria</h1>
+          <h1 class="title">Chronicles of Ethiria</h1>
         </header>
         <main>
         <Navbar />

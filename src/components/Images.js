@@ -4,25 +4,25 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 function Images() {
-  // Mock image data
-  const imageData = [
-    { id: 1, url: 'https://example.com/image1.jpg', alt: 'Image 1' },
-    { id: 2, url: 'https://example.com/image2.jpg', alt: 'Image 2' },
-    { id: 3, url: 'https://example.com/image3.jpg', alt: 'Image 3' },
-    { id: 4, url: 'https://example.com/image4.jpg', alt: 'Image 4' },
-    { id: 5, url: 'https://example.com/image5.jpg', alt: 'Image 5' },
-    { id: 6, url: 'https://example.com/image6.jpg', alt: 'Image 6' },
-    { id: 7, url: 'https://example.com/image7.jpg', alt: 'Image 7' },
-    { id: 8, url: 'https://example.com/image8.jpg', alt: 'Image 8' },
-    { id: 9, url: 'https://example.com/image9.jpg', alt: 'Image 9' },
-    { id: 10, url: 'https://example.com/image10.jpg', alt: 'Image 10' }
+  // Mock data for images and videos
+  const mediaData = [
+    { id: 1, type: 'image', url: 'https://example.com/image1.jpg', alt: 'Image 1' },
+    { id: 2, type: 'video', url: 'https://example.com/video1.mp4', alt: 'Video 1' },
+    // Add more items as needed
   ];
 
-  // Function to render image items
-  const renderImageItems = () => {
-    return imageData.map(image => (
-      <div key={image.id}>
-        <img src={image.url} alt={image.alt} />
+  // Function to render image and video items
+  const renderMediaItems = () => {
+    return mediaData.map(media => (
+      <div key={media.id}>
+        {media.type === 'image' ? (
+          <img src={media.url} alt={media.alt} />
+        ) : (
+          <video controls>
+            <source src={media.url} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        )}
       </div>
     ));
   };
@@ -54,9 +54,9 @@ function Images() {
 
   return (
     <section>
-      <h2>Game Images</h2>
+      <h2>Game Media</h2>
       <Slider {...settings}>
-        {renderImageItems()}
+        {renderMediaItems()}
       </Slider>
     </section>
   );

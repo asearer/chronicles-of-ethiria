@@ -12,11 +12,14 @@ header {
   padding: 2% 5%; /* Fluid padding */
   text-align: center;
 }
-
+.title {
+ font-family: 'Nanum Pen Script', cursive; /* Updated font-family */ 
+}
 header h1 {
   margin: 0;
   font-size: 3vw; /* Fluid font size */
   font-weight: bold;
+
 }
 
 /* Main content styles */
